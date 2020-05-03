@@ -1,0 +1,58 @@
+<ion-content>
+  <ion-grid>
+    <ion-row  class="justify-content-center">
+      <ion-col><br />
+        <ion-card class="align-self-center">
+          <h2 class="ion-text-center ion-padding">LOGIN</h2>
+          <form #form="ngForm" (ngSubmit)="login(form)">
+            <ion-item>
+              <div color="dark" slot="start">
+                <ion-icon slot="icon-only" name="person"></ion-icon>
+              </div>
+              <ion-input name="username" type="text" placeholder="Username" [(ngModel)]="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <div color="dark" slot="start">
+                <ion-icon slot="icon-only" name="lock-closed"></ion-icon>
+              </div>
+              <ion-input name="password" type="text" placeholder="Password" *ngIf="showPasswordText" [(ngModel)]="password"></ion-input>
+              <ion-input name="password" type="password" placeholder="Password" *ngIf="!showPasswordText" [(ngModel)]="password"></ion-input>
+              <ion-icon color="dark" slot="icon-only" (click)="showPasswordText = !showPasswordText" *ngIf="showPasswordText" name="aye" slot="end" class="ion-align-self-center"></ion-icon>
+              <ion-icon color="dark" slot="icon-only" (click)="showPasswordText = !showPasswordText" *ngIf="!showPasswordText" name="aye-off" slot="end" class="ion-align-self-center"></ion-icon>
+            </ion-item>
+            <ion-button size="block" type="submit" (click)="login()">Login</ion-button>
+          </form>
+          <p class="ion-text-center">Don't have account ?</p>
+          <ion-button size="block" (click)="signUp()">Register</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row >
+  </ion-grid>
+</ion-content>
+
+<!-- 
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="light" (click)="dismissLogin()">Close</ion-button>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input ngModel type="password" name="password"></ion-input>
+    </ion-item>
+  
+    <p text-right>Forgot Password?</p>
+  
+    <ion-button type="submit" expand="full" color="primary">Login</ion-button>
+  </form>
+  <p text-center>Don't have a account?</p>
+  <ion-button expand="full" color="danger" (click)="registerModal()">Register</ion-button>
+</ion-content> -->

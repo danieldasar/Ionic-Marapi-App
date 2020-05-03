@@ -3,15 +3,75 @@
     <ion-title>
       HOME
     </ion-title>
+    <!-- <ion-button end>
+      <button ion-button (click)="#"><ion-icon name="list"></ion-icon>App</button>
+    </ion-button> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header collapse="condense" class="kepala">
     <ion-toolbar>
       <ion-title size="large">home</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card color="primary" id="awal">
+    <img src="../../assets/img/gunung.jpg" alt="ion">
+    <ion-card-header>
+      <ion-card-content>
+        <p class="suhu"><ion-icon name="map-outline"></ion-icon> 25`C <br> Cerah</p>
+    <p class="lokasi"><ion-icon name="location-outline"></ion-icon>MARAPI</p>
+      </ion-card-content>
+    </ion-card-header>
+    
+  </ion-card>
+  <ion-card>
+    <img src="../../assets/img/gunung.jpg" alt="ion">
+  <ion-card-header>
+    <ion-card-title>Hotel Panama Garden</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis mollis ligula sed ultrices.
+  </ion-card-content>
+  </ion-card>
+   
+  <div>
+    <!-- <ion-grid>
+      <ion-item>
+        <ion-card>
+          
+        </ion-card>    
+      </ion-item>
+    </ion-grid> -->
+    <ion-button class="tombol1">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label> Info</ion-label>
+    </ion-button>
 
-  <app-explore-container name="Halaman Home"></app-explore-container>
+    <ion-button class="tombol1">
+      <ion-label> Riwayat</ion-label>
+    </ion-button>
+
+    <ion-button class="tombol1">
+      <ion-label> Maps</ion-label>
+    </ion-button>
+  </div>
+  <ion-button class="tombol2" >
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-label>Daftar Pendakian</ion-label>
+  </ion-button>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-list>
+          <ion-item>
+            asdas
+          </ion-item>
+          <ion-item>
+            asdas
+          </ion-item>
+        </ion-list>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

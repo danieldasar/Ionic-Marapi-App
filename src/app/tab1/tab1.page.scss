@@ -1,3 +1,38 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+ion-card {
+  margin: 15px;
+  height: 25%;
+  // background: url(src/assets/img/gunung.jpg) center;
+}
+p.lokasi{
+  width: 45%;
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+}
+p.suhu{
+  width: 45%;
+  float: left;
+  margin-left: 10px;
+}
+
+div {
+  align-content: center;
+  align-items: center;
+}
+
+.tombol1 {
+  position: center;
+  width: 32%;
+  height: 100px;
+  padding: 5px;
+}
+.tombol2 {
+  align-items: center;
+  display: block;
+  // width: 30%;
+  height: 70px;
+  padding: 5px;
+}
