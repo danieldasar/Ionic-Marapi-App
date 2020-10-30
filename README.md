@@ -22,5 +22,6 @@ page :
 7. Login dan Regis = untuk backend menggunakan PHP
 .
 
-Jika ada yang mengubah atau bantu memperbaiki dipersilahkan :)
+Jika ada yang mengubah atau bantu memperbaiki dipersilahkan :).
+
 Ditunggu saran dan ilmunya dari para suhu ;)
